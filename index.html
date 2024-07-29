@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>לומדים אנגלית בכיף: קטגוריות מתחלפות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>לומדים אנגלית בכיף: קטגוריות מתחלפות</h1>
+        <div id="startMenu">
+            <button id="startButton">התחל משחק</button>
+            <button id="customWordsButton">הזן מילים מותאמות אישית</button>
+            <label for="loadFile" class="file-label">טען מילים מקובץ</label>
+            <input type="file" id="loadFile" class="file-input" accept=".json">
+        </div>
+        <div id="customWordsForm" style="display:none;">
+            <div id="wordPairs"></div>
+            <button id="addWordPair">הוסף זוג מילים</button>
+            <button id="submitCustomWords">שמור והתחל משחק</button>
+            <button id="saveToFile">שמור מילים לקובץ</button>
+        </div>
+        <div id="gameArea" style="display:none;">
+            <div class="category" id="categoryDisplay"></div>
+            <div class="word-display" id="wordDisplay"></div>
+            <div class="options" id="options"></div>
+            <div class="score" id="score">ניקוד: 0</div>
+            <div class="question-counter" id="questionCounter">שאלה: 1/10</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
